@@ -39,8 +39,6 @@ const char inst2[] = "Press a key to echo it back or ESC to quit\r\n";
  */
 void UART_IRQHandler(void)
 {
-	/* Want to handle any errors? Do it here. */
-
 	/* Use default ring buffer handler. Override this with your own
 	   code if you need more capability. */
 	Chip_UART_IRQRBHandler(LPC_USART, &rxring, &txring);
